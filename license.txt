@@ -1,0 +1,6 @@
+This software is provided free of charge for non-commercial use only.
+You may use, modify, and share it for personal or educational purposes.
+Commercial use, resale, or distribution as part of a commercial product is prohibited
+without explicit permission from the author.
+
+Copyright (c) 2025 adm1nsys
