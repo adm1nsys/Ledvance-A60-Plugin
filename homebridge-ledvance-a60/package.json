@@ -3,10 +3,19 @@
   "version": "0.1.0",
   "description": "HomeBridge accessory for Ledvance Smart+ Wi-Fi E27 A60 (Tuya 3.5)",
   "main": "index.js",
-  "keywords": [ "homebridge-plugin" ],
+  "keywords": ["homebridge-plugin"],
   "engines": {
     "node": ">=14.17.0",
     "homebridge": ">=1.6.0"
+  },
+  "author": "adm1nsys",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adm1nsys/Ledvance-A60-Plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adm1nsys/Ledvance-A60-Plugin/issues"
   },
   "dependencies": {}
 }
