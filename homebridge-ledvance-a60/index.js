@@ -77,7 +77,7 @@ class LedvanceA60Accessory {
         const m = ln.match(/\(([\d.]+)\) at ([0-9a-f:]+)/i);
         if (m && m[2].toLowerCase() === this.mac) {
           this.ip = m[1];
-          this.log(`IP найден: ${this.ip}`);
+          this.log(`Found the bulb at ${this.ip}`);
           break;
         }
       }
@@ -89,7 +89,7 @@ class LedvanceA60Accessory {
 
   async callPy(args = [], needResult = false) {
     const ip = this.arpLookupSync();
-    if (!ip) throw new Error('IP не найден');
+    if (!ip) throw new Error('Bulb IP not found: set "ip" in the config or check that the MAC is in the ARP table');
     const py = path.join(__dirname, 'LedvanceE27A60.py');
     try {
       const { stdout } = await execFileAsync('python3', [py, this.devId, ip, this.key, ...args]);

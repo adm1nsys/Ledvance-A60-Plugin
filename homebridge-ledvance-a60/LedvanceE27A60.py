@@ -18,7 +18,7 @@ Options (can be combined):
   --tail [SEC]                   continuously print DPS every SEC (default 1)
   --on / --off                   turn on / off (DPS 20)
   --brightness    1-100          brightness %  (DPS 22, white mode)
-  --shade         2700-6500      color temperature K (≈2700–6500 → DPS 23)
+  --shade         KELVIN         color temperature in K (DPS 23); the bulb covers ~2700–6500
   --rgb           R,G,B          set RGB color (0-255,0-255,0-255)
   --saturation    1-100          saturation for --rgb (default 100)
   --raw           HHHHSSSSVVVV   12-hex string for DPS 24 (alternative to RGB)
@@ -73,8 +73,8 @@ def get_parser() -> argparse.ArgumentParser:
 
     p.add_argument("--status", action="store_true", help="Print current device status")
     p.add_argument("--tail", nargs="?", const="1", metavar="SEC", help="Continuously print status every SEC (default: 1)")
-    p.add_argument("--brightness", type=int, metavar="1-100", help="print utility version")
-    p.add_argument("--shade", type=int, metavar="2700K-6500K", help="Color temperature in Kelvin (DPS 23)")
+    p.add_argument("--brightness", type=int, metavar="1-100", help="Brightness in %% (DPS 22, white mode)")
+    p.add_argument("--shade", type=int, metavar="KELVIN", help="Color temperature in Kelvin (DPS 23); the bulb covers ~2700-6500")
     p.add_argument("--rgb", metavar="R,G,B", help="RGB color (0-255 each)")
     p.add_argument("--saturation", type=int, default=100, metavar="1-100", help="Saturation for RGB (default: 100)")
     p.add_argument("--raw", metavar="HHHHSSSSVVVV", help="12-digit hex HSV string (DPS 24)")
