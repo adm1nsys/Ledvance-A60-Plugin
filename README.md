@@ -1,8 +1,18 @@
-# homebridge-ledvance-a60
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset=".github/readme/banner-light.svg">
+  <img src=".github/readme/banner-dark.svg" alt="LEDVANCE A60 Homebridge — The E27 A60 bulb in Apple Home, locally" width="100%">
+</picture>
 
-A [Homebridge](https://homebridge.io) plugin that brings the LEDVANCE Smart+ WiFi E27 A60 RGBW bulb into Apple HomeKit — controlled over the local network, without the LEDVANCE cloud.
+<p>
+  <a href="https://adm1nsys.github.io/Ledvance-A60-Plugin/"><img src="https://img.shields.io/badge/Website-070707?style=for-the-badge&logo=safari&logoColor=white" alt="Website"></a>
+  <a href="https://www.npmjs.com/package/homebridge-ledvance-a60"><img src="https://img.shields.io/npm/v/homebridge-ledvance-a60?style=for-the-badge&logo=npm&logoColor=white&label=npm&labelColor=070707&color=434343" alt="npm"></a>
+  <a href="https://github.com/adm1nsys/Ledvance-A60-Plugin/releases/latest/download/homebridge-ledvance-a60.zip"><img src="https://img.shields.io/badge/Download_ZIP-070707?style=for-the-badge&logo=homebridge&logoColor=white" alt="Download the plugin as ZIP"></a>
+  <a href="https://adm1nsys.github.io/Ledvance-A60-Plugin/#versions"><img src="https://img.shields.io/badge/All_versions-070707?style=for-the-badge&logo=github&logoColor=white" alt="All versions"></a>
+  <a href="https://adm1nsys.github.io/Ledvance-Smart-WiFi-E27-A60-Local-Control/"><img src="https://img.shields.io/badge/CLI_tool-070707?style=for-the-badge&logo=python&logoColor=white" alt="The command-line tool"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-070707?style=for-the-badge&labelColor=070707&color=434343" alt="MIT license"></a>
+</p>
 
-[![npm](https://img.shields.io/npm/v/homebridge-ledvance-a60)](https://www.npmjs.com/package/homebridge-ledvance-a60)
+**homebridge-ledvance-a60** is a [Homebridge](https://homebridge.io) plugin that brings the LEDVANCE Smart+ WiFi E27 A60 RGBW bulb into Apple HomeKit, controlled over the local network without the LEDVANCE cloud.
 
 In the Home app the bulb is a normal light: on/off, brightness, colour temperature and colour. Changes made elsewhere (for example in the LEDVANCE app) show up within a few seconds.
 

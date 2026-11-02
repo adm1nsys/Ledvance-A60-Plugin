@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>LEDVANCE A60 for Homebridge — adm1nsys</title>
+    <meta name="description" content="Homebridge plugin: the LEDVANCE Smart+ WiFi E27 A60 RGBW bulb in Apple HomeKit, controlled locally without the cloud.">
+    <meta name="theme-color" content="#070707" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f9f9f9" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/adm1nsys/assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="/adm1nsys/assets/css/style.css">
+    <link rel="stylesheet" href="/adm1nsys/kit/project.css">
+  </head>
+  <body>
+    <div class="backdrop backdrop-short" aria-hidden="true"></div>
+
+    <main class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Homebridge · HomeKit · Node.js</p>
+        <h1>LEDVANCE A60 for Homebridge</h1>
+        <p class="lead" data-i18n="lead"></p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.npmjs.com/package/homebridge-ledvance-a60" target="_blank" rel="noopener">
+            <span data-i18n="npm"></span>
+          </a>
+          <a class="btn" data-download="homebridge-ledvance-a60.zip"
+             href="https://github.com/adm1nsys/Ledvance-A60-Plugin/releases/latest/download/homebridge-ledvance-a60.zip">
+            <span data-i18n="download"></span>
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/adm1nsys/Ledvance-A60-Plugin" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="meta" data-i18n="meta"></p>
+      </header>
+
+      <div class="card terminal" aria-label="Install">
+        <div class="terminal-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+<pre>$ pip3 install tinytuya
+$ npm install -g homebridge-ledvance-a60</pre>
+      </div>
+
+      <div class="folds">
+        <details class="card fold" open>
+          <summary><span data-i18n="whatTitle"></span><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="fold-body" data-i18n-html="whatBody"></div>
+        </details>
+
+        <details class="card fold">
+          <summary><span data-i18n="configTitle"></span><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="fold-body">
+            <p data-i18n-html="configIntro"></p>
+<pre>"accessories": [
+  {
+    "accessory": "LedvanceA60",
+    "name": "Living room",
+    "virtualId": "a1b2c3d4e5f6g7h8ijklmn",
+    "localKey": "WQ!zYx8#kLp3vBn@",
+    "ip": "192.168.0.238",
+    "pollInterval": 4000
+  }
+]</pre>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th data-i18n="thField"></th><th data-i18n="thMeaning"></th></tr></thead>
+                <tbody>
+                  <tr><td><code>accessory</code></td><td data-i18n="fAccessory"></td></tr>
+                  <tr><td><code>name</code></td><td data-i18n="fName"></td></tr>
+                  <tr><td><code>virtualId</code></td><td data-i18n="fId"></td></tr>
+                  <tr><td><code>localKey</code></td><td data-i18n="fKey"></td></tr>
+                  <tr><td><code>ip</code></td><td data-i18n="fIp"></td></tr>
+                  <tr><td><code>mac</code></td><td data-i18n="fMac"></td></tr>
+                  <tr><td><code>pollInterval</code></td><td data-i18n="fPoll"></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <details class="card fold">
+          <summary><span data-i18n="reqTitle"></span><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="fold-body" data-i18n-html="reqBody"></div>
+        </details>
+
+        <details class="card fold">
+          <summary><span data-i18n="limitsTitle"></span><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="fold-body" data-i18n-html="limitsBody"></div>
+        </details>
+
+        <details class="card fold" id="versions" open>
+          <summary><span data-i18n="versionsTitle"></span><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="fold-body" data-releases></div>
+        </details>
+      </div>
+    </main>
+
+    <script>
+      const REPO = 'https://github.com/adm1nsys/Ledvance-A60-Plugin';
+      const CLI = 'https://adm1nsys.github.io/Ledvance-Smart-WiFi-E27-A60-Local-Control/';
+      window.PROJECT = {
+        repo: 'adm1nsys/Ledvance-A60-Plugin',
+        license: 'MIT',
+        langs: ['de', 'en'],
+        fallback: [{ label: 'homebridge-ledvance-a60 (main, zip)', url: `${REPO}/archive/refs/heads/main.zip` }],
+        i18n: {
+          de: {
+            lead: 'Ein Homebridge-Plugin, das die LEDVANCE Smart+ WiFi E27 A60 RGBW-Lampe in Apple HomeKit bringt — gesteuert im lokalen Netz, ohne die LEDVANCE-Cloud.',
+            npm: 'Auf npm ansehen',
+            download: 'Plugin als ZIP',
+            meta: 'Homebridge 1.6+ · Node.js 14.17+ · Python 3 mit TinyTuya',
+            whatTitle: 'Was es kann',
+            whatBody: `<p>In der Home-App ist die Lampe eine normale Leuchte: ein/aus, Helligkeit, Farbtemperatur und Farbe. Änderungen von anderswo, etwa aus der LEDVANCE-App, erscheinen nach wenigen Sekunden.</p><p>Das Plugin spricht das Tuya-Protokoll nicht selbst. Es ruft <a href="${CLI}">LedvanceE27A60.py</a> auf — mein Kommandozeilen-Werkzeug für dieselbe Lampe, als Komponente im Plugin enthalten — und liest damit alle paar Sekunden den Zustand. Farbton und Sättigung, die HomeKit wenige Millisekunden nacheinander schickt, werden zu einem Befehl zusammengefasst.</p>`,
+            configTitle: 'Konfiguration',
+            configIntro: 'Ein Zubehör in der <code>config.json</code> von Homebridge eintragen (ein Einstellungsformular gibt es noch nicht). ID und Schlüssel im Beispiel sind ausgedacht.',
+            thField: 'Feld', thMeaning: 'Bedeutung',
+            fAccessory: 'immer LedvanceA60',
+            fName: 'Name in der Home-App (Standard „Ledvance A60“)',
+            fId: 'Tuya-Geräte-ID (Pflicht)',
+            fKey: 'Tuya Local Key (Pflicht)',
+            fIp: 'feste IP der Lampe — empfohlen, im Router reservieren (ip oder mac nötig)',
+            fMac: 'ohne ip sucht das Plugin die Lampe per MAC in der ARP-Tabelle; das klappt erst, wenn der Homebridge-Rechner schon mit der Lampe gesprochen hat',
+            fPoll: 'wie oft der Zustand gelesen wird, in ms (Standard 4000)',
+            reqTitle: 'Voraussetzungen',
+            reqBody: `<ul><li>Homebridge 1.6 oder neuer, Node.js 14.17 oder neuer.</li><li><strong>Python 3 mit TinyTuya</strong> auf demselben Rechner: <code>pip3 install tinytuya</code> — das Plugin installiert es nicht selbst.</li><li>Geräte-ID und Local Key der Lampe — wie man sie bekommt, steht beim <a href="${CLI}">Kommandozeilen-Werkzeug</a>.</li></ul>`,
+            limitsTitle: 'Grenzen',
+            limitsBody: '<ul><li>Jedes Lesen des Zustands startet einen kurzen Python-Prozess; auf einem sehr kleinen Rechner hilft ein längeres <code>pollInterval</code>.</li><li>2025 mit meiner eigenen Lampe (Firmware V1.5.32) und Homebridge getestet. Auf npm liegt Version 0.1.0; seitdem gab es im Repository Korrekturen an Doku und Log-Meldungen, die noch nicht auf npm sind.</li></ul><p>Nicht mit LEDVANCE, Tuya oder Apple verbunden.</p>',
+            versionsTitle: 'Versionen',
+            title: 'LEDVANCE A60 for Homebridge — adm1nsys'
+          },
+          en: {
+            lead: 'A Homebridge plugin that brings the LEDVANCE Smart+ WiFi E27 A60 RGBW bulb into Apple HomeKit — controlled over the local network, without the LEDVANCE cloud.',
+            npm: 'View on npm',
+            download: 'Plugin as ZIP',
+            meta: 'Homebridge 1.6+ · Node.js 14.17+ · Python 3 with TinyTuya',
+            whatTitle: 'What it does',
+            whatBody: `<p>In the Home app the bulb is a normal light: on/off, brightness, colour temperature and colour. Changes made elsewhere, for example in the LEDVANCE app, show up within a few seconds.</p><p>The plugin does not speak the Tuya protocol itself. It calls <a href="${CLI}">LedvanceE27A60.py</a> — my command-line tool for the same bulb, shipped inside the plugin as a component — and reads the state with it every few seconds. Hue and saturation changes that HomeKit sends milliseconds apart are combined into one command.</p>`,
+            configTitle: 'Configuration',
+            configIntro: 'Add an accessory to Homebridge’s <code>config.json</code> (there is no settings form yet). The ID and key in the example are made up.',
+            thField: 'Field', thMeaning: 'Meaning',
+            fAccessory: 'always LedvanceA60',
+            fName: 'name in the Home app (default “Ledvance A60”)',
+            fId: 'Tuya device ID (required)',
+            fKey: 'Tuya local key (required)',
+            fIp: 'fixed IP of the bulb — recommended, reserve it in the router (ip or mac is needed)',
+            fMac: 'without ip, the plugin finds the bulb by MAC in the ARP table; this only works once the Homebridge machine has talked to the bulb',
+            fPoll: 'how often the state is read, in ms (default 4000)',
+            reqTitle: 'Requirements',
+            reqBody: `<ul><li>Homebridge 1.6 or newer, Node.js 14.17 or newer.</li><li><strong>Python 3 with TinyTuya</strong> on the same machine: <code>pip3 install tinytuya</code> — the plugin does not install it.</li><li>The bulb’s device ID and local key — how to get them is on the <a href="${CLI}">command-line tool</a>’s page.</li></ul>`,
+            limitsTitle: 'Limits',
+            limitsBody: '<ul><li>Each status read starts a short Python process; on a very small machine a longer <code>pollInterval</code> helps.</li><li>Tested in 2025 with my own bulb (firmware V1.5.32) and Homebridge. npm has version 0.1.0; the repository has had documentation and log-message fixes since, not yet on npm.</li></ul><p>Not affiliated with LEDVANCE, Tuya or Apple.</p>',
+            versionsTitle: 'Versions',
+            title: 'LEDVANCE A60 for Homebridge — adm1nsys'
+          }
+        }
+      };
+    </script>
+    <script src="/adm1nsys/kit/project.js"></script>
+  </body>
+</html>
