@@ -36,7 +36,7 @@ npm install -g homebridge-ledvance-a60
 
 ## Configuration
 
-Add an accessory to Homebridge's `config.json` (the plugin has no settings form yet):
+In the Homebridge UI open the plugin's **Settings** and fill in the form — or add an accessory to Homebridge's `config.json` by hand:
 
 ```json
 "accessories": [
@@ -65,7 +65,7 @@ Add an accessory to Homebridge's `config.json` (the plugin has no settings form 
 ## Limits
 
 - Each status read starts a short Python process; on a very small machine a longer `pollInterval` helps.
-- Tested in 2025 with my own bulb (firmware V1.5.32) and Homebridge; the version on npm is 0.1.0. The repository has had documentation and log-message fixes since, not yet published to npm.
+- Tested in 2025 with my own bulb (firmware V1.5.32) and Homebridge 1.x. Version 0.2.0 adds the settings form and English log messages; the bulb code is unchanged since then.
 
 ## License
 

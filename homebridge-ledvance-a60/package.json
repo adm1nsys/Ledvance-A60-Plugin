@@ -1,18 +1,38 @@
 {
   "name": "homebridge-ledvance-a60",
-  "version": "0.1.0",
-  "description": "HomeBridge accessory for Ledvance Smart+ Wi-Fi E27 A60 (Tuya 3.5)",
+  "version": "0.2.0",
+  "description": "Homebridge plugin for the LEDVANCE Smart+ WiFi E27 A60 RGBW bulb: on/off, brightness, colour temperature and colour in Apple Home — local network, no cloud (Tuya 3.5).",
   "main": "index.js",
-  "keywords": ["homebridge-plugin"],
+  "files": [
+    "index.js",
+    "LedvanceE27A60.py",
+    "config.schema.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "homekit",
+    "apple-home",
+    "ledvance",
+    "tuya",
+    "tuya-local",
+    "smart-bulb",
+    "e27",
+    "a60"
+  ],
   "engines": {
     "node": ">=14.17.0",
     "homebridge": ">=1.6.0"
   },
-  "author": "adm1nsys",
+  "author": "Heorhii Romanenko (https://adm1nsys.github.io/adm1nsys/)",
   "license": "MIT",
+  "homepage": "https://adm1nsys.github.io/Ledvance-A60-Plugin/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adm1nsys/Ledvance-A60-Plugin.git"
+    "url": "git+https://github.com/adm1nsys/Ledvance-A60-Plugin.git",
+    "directory": "homebridge-ledvance-a60"
   },
   "bugs": {
     "url": "https://github.com/adm1nsys/Ledvance-A60-Plugin/issues"

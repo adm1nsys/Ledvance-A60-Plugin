@@ -112,7 +112,7 @@ $ npm install -g homebridge-ledvance-a60</pre>
             whatTitle: 'Was es kann',
             whatBody: `<p>In der Home-App ist die Lampe eine normale Leuchte: ein/aus, Helligkeit, Farbtemperatur und Farbe. Änderungen von anderswo, etwa aus der LEDVANCE-App, erscheinen nach wenigen Sekunden.</p><p>Das Plugin spricht das Tuya-Protokoll nicht selbst. Es ruft <a href="${CLI}">LedvanceE27A60.py</a> auf — mein Kommandozeilen-Werkzeug für dieselbe Lampe, als Komponente im Plugin enthalten — und liest damit alle paar Sekunden den Zustand. Farbton und Sättigung, die HomeKit wenige Millisekunden nacheinander schickt, werden zu einem Befehl zusammengefasst.</p>`,
             configTitle: 'Konfiguration',
-            configIntro: 'Ein Zubehör in der <code>config.json</code> von Homebridge eintragen (ein Einstellungsformular gibt es noch nicht). ID und Schlüssel im Beispiel sind ausgedacht.',
+            configIntro: 'In der Homebridge-Oberfläche die <strong>Einstellungen</strong> des Plugins öffnen und das Formular ausfüllen — oder ein Zubehör von Hand in die <code>config.json</code> eintragen. ID und Schlüssel im Beispiel sind ausgedacht.',
             thField: 'Feld', thMeaning: 'Bedeutung',
             fAccessory: 'immer LedvanceA60',
             fName: 'Name in der Home-App (Standard „Ledvance A60“)',
@@ -124,7 +124,7 @@ $ npm install -g homebridge-ledvance-a60</pre>
             reqTitle: 'Voraussetzungen',
             reqBody: `<ul><li>Homebridge 1.6 oder neuer, Node.js 14.17 oder neuer.</li><li><strong>Python 3 mit TinyTuya</strong> auf demselben Rechner: <code>pip3 install tinytuya</code> — das Plugin installiert es nicht selbst.</li><li>Geräte-ID und Local Key der Lampe — wie man sie bekommt, steht beim <a href="${CLI}">Kommandozeilen-Werkzeug</a>.</li></ul>`,
             limitsTitle: 'Grenzen',
-            limitsBody: '<ul><li>Jedes Lesen des Zustands startet einen kurzen Python-Prozess; auf einem sehr kleinen Rechner hilft ein längeres <code>pollInterval</code>.</li><li>2025 mit meiner eigenen Lampe (Firmware V1.5.32) und Homebridge getestet. Auf npm liegt Version 0.1.0; seitdem gab es im Repository Korrekturen an Doku und Log-Meldungen, die noch nicht auf npm sind.</li></ul><p>Nicht mit LEDVANCE, Tuya oder Apple verbunden.</p>',
+            limitsBody: '<ul><li>Jedes Lesen des Zustands startet einen kurzen Python-Prozess; auf einem sehr kleinen Rechner hilft ein längeres <code>pollInterval</code>.</li><li>2025 mit meiner eigenen Lampe (Firmware V1.5.32) und Homebridge 1.x getestet. Version 0.2.0 bringt das Einstellungsformular und englische Log-Meldungen; der Code für die Lampe ist seitdem unverändert.</li></ul><p>Nicht mit LEDVANCE, Tuya oder Apple verbunden.</p>',
             versionsTitle: 'Versionen',
             title: 'LEDVANCE A60 for Homebridge — adm1nsys'
           },
@@ -136,7 +136,7 @@ $ npm install -g homebridge-ledvance-a60</pre>
             whatTitle: 'What it does',
             whatBody: `<p>In the Home app the bulb is a normal light: on/off, brightness, colour temperature and colour. Changes made elsewhere, for example in the LEDVANCE app, show up within a few seconds.</p><p>The plugin does not speak the Tuya protocol itself. It calls <a href="${CLI}">LedvanceE27A60.py</a> — my command-line tool for the same bulb, shipped inside the plugin as a component — and reads the state with it every few seconds. Hue and saturation changes that HomeKit sends milliseconds apart are combined into one command.</p>`,
             configTitle: 'Configuration',
-            configIntro: 'Add an accessory to Homebridge’s <code>config.json</code> (there is no settings form yet). The ID and key in the example are made up.',
+            configIntro: 'In the Homebridge UI open the plugin’s <strong>Settings</strong> and fill in the form — or add an accessory to Homebridge’s <code>config.json</code> by hand. The ID and key in the example are made up.',
             thField: 'Field', thMeaning: 'Meaning',
             fAccessory: 'always LedvanceA60',
             fName: 'name in the Home app (default “Ledvance A60”)',
@@ -148,7 +148,7 @@ $ npm install -g homebridge-ledvance-a60</pre>
             reqTitle: 'Requirements',
             reqBody: `<ul><li>Homebridge 1.6 or newer, Node.js 14.17 or newer.</li><li><strong>Python 3 with TinyTuya</strong> on the same machine: <code>pip3 install tinytuya</code> — the plugin does not install it.</li><li>The bulb’s device ID and local key — how to get them is on the <a href="${CLI}">command-line tool</a>’s page.</li></ul>`,
             limitsTitle: 'Limits',
-            limitsBody: '<ul><li>Each status read starts a short Python process; on a very small machine a longer <code>pollInterval</code> helps.</li><li>Tested in 2025 with my own bulb (firmware V1.5.32) and Homebridge. npm has version 0.1.0; the repository has had documentation and log-message fixes since, not yet on npm.</li></ul><p>Not affiliated with LEDVANCE, Tuya or Apple.</p>',
+            limitsBody: '<ul><li>Each status read starts a short Python process; on a very small machine a longer <code>pollInterval</code> helps.</li><li>Tested in 2025 with my own bulb (firmware V1.5.32) and Homebridge 1.x. Version 0.2.0 adds the settings form and English log messages; the bulb code is unchanged since then.</li></ul><p>Not affiliated with LEDVANCE, Tuya or Apple.</p>',
             versionsTitle: 'Versions',
             title: 'LEDVANCE A60 for Homebridge — adm1nsys'
           }

@@ -1,0 +1,50 @@
+{
+  "pluginAlias": "LedvanceA60",
+  "pluginType": "accessory",
+  "singular": false,
+  "headerDisplay": "Controls a LEDVANCE Smart+ WiFi E27 A60 bulb over the local network. Needs Python 3 with TinyTuya on this machine: `pip3 install tinytuya`.",
+  "footerDisplay": "How to get the device ID and local key: [README](https://github.com/adm1nsys/Ledvance-Smart-WiFi-E27-A60-Local-Control#requirements).",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "Ledvance A60",
+        "required": true,
+        "description": "Name in the Home app."
+      },
+      "virtualId": {
+        "title": "Device ID",
+        "type": "string",
+        "required": true,
+        "description": "Tuya device ID of the bulb."
+      },
+      "localKey": {
+        "title": "Local key",
+        "type": "string",
+        "required": true,
+        "description": "Tuya local key of the bulb."
+      },
+      "ip": {
+        "title": "IP address",
+        "type": "string",
+        "format": "ipv4",
+        "description": "Fixed IP of the bulb — recommended (reserve it in the router). Fill in this or the MAC address."
+      },
+      "mac": {
+        "title": "MAC address",
+        "type": "string",
+        "pattern": "^([0-9A-Fa-f]{2}[:-]){5}[0-9A-Fa-f]{2}$",
+        "description": "Without an IP the plugin finds the bulb by MAC in the ARP table; this only works once this machine has talked to the bulb."
+      },
+      "pollInterval": {
+        "title": "Poll interval (ms)",
+        "type": "integer",
+        "default": 4000,
+        "minimum": 1000,
+        "description": "How often the state is read. Each read starts a short Python process; on a small machine a longer interval helps."
+      }
+    }
+  }
+}
